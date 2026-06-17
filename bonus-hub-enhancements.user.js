@@ -11,7 +11,17 @@
 // @downloadURL  https://raw.githubusercontent.com/Pak5012/tamper_scripts/main/bonus-hub-enhancements.user.js
 // ==/UserScript==
 
-TEST
+(function () {
+    'use strict';
+
+    /*****************************************************************
+     * CONFIGURATION
+     *****************************************************************/
+    const CONFIG = {
+        includeHeader: localStorage.getItem('pak_include_header') !== 'false', // Default: true
+        includeFooter: localStorage.getItem('pak_include_footer') !== 'false',  // Default: true
+        includeApostrophe: localStorage.getItem('pak_include_apostrophe') !== 'false'  // Default: true
+    };
 
     /*****************************************************************
      * FONT AWESOME
