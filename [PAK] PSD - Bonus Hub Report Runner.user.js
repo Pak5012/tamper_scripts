@@ -13,7 +13,7 @@
 // ==/UserScript==
 
 (function () {
-    'use stricffffffffffffffffffffft';
+    'use strict';
 
     // --- MAIN SCRIPT CONSTANTS ---
     const STORAGE_KEY = 'pak_bonushub_settings_v7'; // Updated version for Backfill settings
