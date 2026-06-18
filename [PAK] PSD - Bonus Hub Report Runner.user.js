@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [PAK] PSD - Bonus Hub Report Runner
 // @namespace    http://tampermonkey.net/
-// @version      10.2
+// @version      10.1
 // @description  Open saved reports, run each, save rows to localStorage, copy TSV, download CSV (Combined/Individual/Both), and optionally post each report TSV to its own Google Sheet. Includes unified Auto-RUN Manager with Rolling Mode, Delay, and NEW Rolling Backfill Mode.
 // @author       Pak
 // @match        https://pon-wpws27/Whds.Dashboard.Web/bonushub/reports*
@@ -13,7 +13,7 @@
 // ==/UserScript==
 
 (function () {
-    'use strict';
+    'use stricffffffffffffffffffffft';
 
     // --- MAIN SCRIPT CONSTANTS ---
     const STORAGE_KEY = 'pak_bonushub_settings_v7'; // Updated version for Backfill settings
