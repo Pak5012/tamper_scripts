@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [PAK] PSD - Bonus Hub Report Runner
 // @namespace    http://tampermonkey.net/
-// @version      10.2
+// @version      10.3
 // @description  Open saved reports, run each, save rows to localStorage, copy TSV, download CSV (Combined/Individual/Both), and optionally post each report TSV to its own Google Sheet. Includes unified Auto-RUN Manager with Rolling Mode, Delay, and NEW Rolling Backfill Mode.
 // @author       Pak
 // @match        https://pon-wpws27/Whds.Dashboard.Web/bonushub/reports*
@@ -828,7 +828,6 @@
                 settings.minuteFrom = pad2(start.getMinutes());
                 settings.hourTo = pad2(end.getHours());
                 settings.minuteTo = pad2(end.getMinutes());
-                settings.reportMode = 'daily';
 
                 console.log(`[Rolling Mode] Manual Range: ${manualPeriods[0].label}`);
             }
@@ -1747,6 +1746,6 @@
         scheduleNextRun();
     });
 
-    
+
 
 })();
